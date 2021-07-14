@@ -13,3 +13,16 @@ function checkAge(age) {
   } else {
     alert( 'fuck outa here chump' );
   }
+
+function minA(a,b) {
+    if (a > b) {
+        return b;
+    }
+    return a;
+}
+function minB(a, b) {
+    return a < b ? a : b;
+  }
+
+
+

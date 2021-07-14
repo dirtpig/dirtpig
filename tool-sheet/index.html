@@ -133,6 +133,62 @@
       <!----------------------------------------------- NEW ITEMS HERE ----------------------------->
       <!-- GIVE TITLE DERP-->
       <!-- TEST -->
+      <!-- FLASH CARDS -->
+      <div class="container tools">
+        <h2>JavaScript Flashcards</h2>
+        <p>[left/right] for previous/next <br> 
+          [up/down] for front/back <br>
+          [enter] for adding a card & [delete] for clearing the deck</p>
+        <p id="front">
+          <!-- term lives here-->
+        </p><br>
+        <hr><br>
+        <div id="back">
+          <!-- definition lives here-->
+        </div><br>
+        <div id="activeCardButtons container">
+          <button id="prev" onclick="prevCard()">Previous Card</button>
+          <button id="flip" type="button" value="Flip" onclick="flash()">Flip</button>
+          <button id="next" onclick="nextCard()">Next Card</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="container">
+          <form id="cardForm">
+            <input type="text" id="newTerm" placeholder="add a term or concept..." onkeydown="if(event.keyCode==13) document.getElementById('newDef').focus()">
+            <input id="newDef" type="text" placeholder="...give it a definition" onKeyDown="if(event.keyCode==13) cardAdd()">
+            <br>
+            <input id="submit" type="button" value="add it to the deck!" onClick="cardAdd()">
+            <br>
+             <input id="clearDeck" type="button" value="Click HERE to clear the deck!" onClick="emptyDeck()"> 
+          </form>
+          <br>
+        </div><!--
+        <select name="" id="selectCards" style="display: none;">
+        </select>
+        <div id="importExport">
+          <div id="import">
+            <h2 class="text-center">Import</h2>
+            <p>choose a local file containing a <code>.json</code> array of cards-- then click below!</p>
+            <input type="file" id="uploadDeck">
+            <button id="deckSubmit" onclick="upload_deck()">Choose a file and click here.</button>
+          </div>
+          <div id="export"> 
+            <a class="close" id="close" onclick="slideOut()"></a>
+           <h2 style="text-align:center;color:white;">Export</h2>
+           <p style="color:white;">Click below to save a local <code> .json</code> file containing the current deck.</p>
+           
+           <button id="saveDeck" onclick="download_deck()">Save this Deck?</button>
+       </div>
+        
+         </div>
+       <a class="activator" id="activator" onclick="slideIn()">Click Here to Import & Export/Save Decks of Cards</a>
+        </div> -->
+        <script src="tools/flash-cards.js"></script>
+      </div>
+      <hr>
+      <!-- BLOG POST-->
       <div class="container blog">
         <h2>intro// </h2>
         <p><-- note from dev --><br>
@@ -169,7 +225,9 @@
       <!-- BLANK PROJECT SPACE -->
       <div class="container tools">
         <div class="container col">
-          <script src="tools/sandbox.js"></script>
+          <h3>function names</h3>
+          <p>a function should do exactly what is suggested by its name, no more. have a firm understanding of what a prefix means given the context of the current project. frameworks/libraries may define functions with ultrashort names to improve convenience ie. jQuery defines a function with '$' and the library Lodash has its core function name '_'.</p>
+          
         </div>
       </div>
     </div>
