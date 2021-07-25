@@ -1,0 +1,223 @@
+/* main style */
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #222;
+    background-color: white;
+    height: auto;
+    display: grid;
+    
+}
+
+header {
+    height: 55px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+
+    position: fixed; /*positions bottom */
+    bottom: 0;
+    left: 0;    
+}
+
+/* nav bar style */
+
+.nav-flex-container {
+    display: flex;
+    flex-direction: space-between;
+    padding: 1%;
+
+    position: fixed; /*position top */
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    align-items: center;
+}
+
+.nav-flex-container a { /* anchor tags in the flex container */
+    color: inherit;
+    text-decoration: none;
+        
+}
+
+.nav-flex-child-1 {
+    flex-grow: 1;
+
+    display: flex; 
+    align-items: center; 
+}
+
+.nav-flex-child-2 {
+    flex-grow: 1;
+    padding-right: 12px;
+}
+
+/* nav bar links */
+
+.nav-bar-left {
+    list-style-type: none;
+    margin: 0;
+    padding: 0% 2%;
+
+    text-align: left;
+}
+
+.nav-bar-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 2%;
+
+    text-align: right;
+}
+
+.nav-flex-container li { /* list items in the flex container */
+    display: inline-block; 
+    vertical-align: middle;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.nav-flex-container li:hover {
+    text-decoration: underline;
+}
+
+/* main */
+
+.main-container {    
+    display: grid;
+    width: 100%;    
+}
+
+.logo {   
+    /* position of logo on page */
+    width: fit-content;
+    justify-self: center;
+    padding-top: 10%;     
+}
+
+/* search bar */
+
+.search-area-container {    
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 1%;
+
+}
+
+.search-bar {
+    margin: auto;
+    padding-left: 18px;
+    width: 580px;
+    height: 44px;
+    border-radius: 30px;
+    border: 1px solid rgb(206, 206, 206);
+    
+}
+
+.search-bar:hover {
+    border: 2px solid rgb(206, 206, 206);
+    
+}
+
+.search-bar li {
+    list-style: none;
+    display: inline;
+    margin: auto;
+    vertical-align: middle;
+    
+    
+}
+
+.search-input {   
+    margin: 10px auto;
+    padding: 0;
+    width: 80%;
+    min-height: 23px;
+    border: none; 
+}
+
+.search-input:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.search {
+    color: rgb(199, 199, 199);
+    padding: 1% 2%;
+    justify-self: center;
+    border-radius: 30px;    
+}
+
+.mic {
+    color: rgb(199, 199, 199);
+    padding: 1% 2%;
+    justify-self: center;
+    border-radius: 30px;
+}
+
+.mic:hover {
+    cursor: pointer;
+}
+
+
+/* search buttons */
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 2% .5%;
+    padding: .5% 1%;
+    font-weight: 400;
+    color: #3c4043;
+    
+    background-color: rgb(248, 248, 248);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid rgb(211, 211, 211);
+}
+
+/* footer */
+
+.footer-flex-container {
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+    align-items: center;
+    color: #636a6e;
+    
+}
+
+.footer-flex-container li {
+    display: inline-block;
+    padding: 0 12px;
+    flex-grow: 1;
+}
+
+.footer-flex-container li:hover {
+    text-decoration: underline;
+}
+
+.footer-flex-container a {
+    color: inherit;
+    text-decoration: none; /* do I need the a and li or can I collapse them? */
+    flex: 1;
+}
+#leaf-pic {
+    width: 7%;   
+}
