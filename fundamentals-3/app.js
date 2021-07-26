@@ -7,8 +7,6 @@ function add7(num) {
   } else return "daheck? that is not a number...";
 }
 
-console.log(add7);
-
 // 2. Write a function called multiply that takes 2 numbers and returns their product.
 function multiply(a, b) {
   return a * b;
@@ -29,5 +27,5 @@ function capitalize(yourString) {
 // note: lastLetter("abcd") should return "d"
 
 function lastLetter(yourString) {
-    return yourString.substr(-1);
+  return yourString.substr(-1);
 }
